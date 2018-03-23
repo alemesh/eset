@@ -57,4 +57,240 @@ body
 	background-color: $accent
 	color: #fff
 
+
+//==============================================
+
+
+
+img
+	max-width: 100%
+	height: auto
+
+.label
+	position: absolute
+	padding: 15px 15px
+	left: -40px
+	bottom: 13%
+	color: white
+	text-transform: uppercase
+	font-size: 10px
+	transform: rotate(-90deg)
+	&:after
+		content: ''
+		position: absolute
+		left: 6px
+		top: 48%
+		transform: translateY(-50%)
+		width: 5px
+		height: 5px
+		background: white
+		border-radius: 50%
+
+.header-section
+	position: relative
+	//min-height: 900px
+	min-height: 744px
+	background-size: cover
+
+.main-holder
+	max-width: 1370px
+	margin: 0 auto
+	padding: 0 35px
+
+.visual-wrap
+	position: relative
+	z-index: 3
+	display: flex
+	justify-content: flex-end
+
+.visual-content
+	direction: rtl
+	width: 50% //На мобиле сделать 100%
+	padding: 230px 15px 20px
+	.visual-text
+		border-right: 5px solid rgb(255, 194, 14)
+		padding: 0 10px 0 110px
+	.title-header
+		font-family: "OpenSansHebrew-Bold"
+		font-size: 44px
+		color: white
+		font-weight: bold
+		line-height: 1.314
+		margin: 0 8px 0 0
+		.logo
+			display: inline-block
+			//background: red
+			background-image: url(../img/logo.png)
+			background-size: cover
+			margin: 0 0 -6px
+			width: 121px
+			height: 47px
+	.description-header
+		font-size: 56px
+		font-family: "OpenSansHebrew-Bold"
+		color: rgb(255, 194, 14)
+		font-weight: bold
+		line-height: 1.314
+		margin: 0 8px 0 0
+
+//==================================
+
+.form-hold
+	bottom: 0
+	left: 0
+	width: 100%
+	min-height: 200px
+	//display: block
+	//background: gray
+	background: transparent
+	//position: absolute
+	//padding: 20px 0
+	//padding-bottom: 15px
+	position: relative
+	margin-top: -100px
+	z-index: 23
+	.main-holder
+		background: rgb(255, 194, 14)
+		min-height: 200px
+		padding: 30px 35px
+		border-radius: 18px
+	h3
+		color: rgb(0, 69, 78)
+		text-align: center
+		font-family: "OpenSansHebrew-Bold", Helvetica
+		font-size: 28px
+		font-weight: bold
+		line-height: 1.314
+		margin: 0 0 30px
+	.form
+		max-width: 100%
+		//max-width: 1070px
+		margin: 0 auto
+		position: relative
+
+	.form-row-wrap
+		direction: rtl
+		display: flex
+		flex-wrap: wrap
+		//margin: 0 -8px
+		margin: 0 -12px
+		transition: opacity 0.2s ease-in-out
+
+	.form-row
+		width: 21.5%
+		//padding: 0 8px
+		padding: 0 12px
+		.maska-input
+			//transform: skewX(-20deg)
+			overflow: hidden
+			border-radius: 6px
+			background-color: rgb(255, 255, 255)
+			transition: all .5s ease
+			&:hover
+				background-color: #dad8d2
+				//border-top: 2px solid red
+				text-decoration: none
+				color: #111
+
+		.btn-maska
+			background: rgb(0, 69, 78)
+			&:hover
+				background: rgb(0, 69, 78)
+				box-shadow: 3.441px 4.915px 9px 0px rgba(133, 133, 133, 0.4)
+				text-decoration: none
+
+
+
+
+
+
+	.form-grow-5
+		width: 14%
+
+	.form-control
+		//transform: skewX(20deg)
+		background: transparent
+		padding: 10px
+		direction: rtl
+		display: block
+		width: 100%
+		//width: 250px
+		height: 55px
+		//color: #b5b5b5
+		color: #2f2f2f
+		border: none
+		font-size: 23px
+		font-family: "OpenSansHebrew-Regular"
+		line-height: 1.2
+		text-decoration: none
+		&::placeholder
+			color: #cccccc
+
+	.btn
+		position: relative
+		//transform: skewX(20deg)
+		background: transparent
+		border-radius: 13px
+		//background: #e42a37
+
+		//box-shadow: 3.441px 4.915px 9px 0px rgba(133, 133, 133, 0.4)
+		font-family: "OpenSansHebrew-Bold"
+		color: white
+		text-align: center
+		height: 55px
+		border: none
+		outline: none
+		display: block
+		width: 100%
+		//width: 250px
+		font-size: 23px
+		text-decoration: none
+	//transition: all .5s ease
+
+	.btn-txt
+		display: inline-block
+		vertical-align: middle
+		padding: 2px
+		&:after
+			content: ''
+			width: 13px
+			height: 13px
+			border-left: 4px solid rgb(255, 194, 14)
+			border-bottom: 4px solid rgb(255, 194, 14)
+			display: inline-block
+			vertical-align: middle
+			transform: rotate(45deg)
+			position: relative
+//margin: 0 4px
+
+
+//==================================
+
+.main
+	//min-height: 1017px
+	//min-height: 1383px
+	min-height: 628px
+	background-size: cover
+	//direction: rtl
+	text-align: center
+	position: relative
+	width: 100%
+	overflow: hidden
+	//direction: rtl
+	background-repeat: no-repeat
+	//opacity: .8
+	margin-top: -100px
+	padding-top: 100px
+
+
+
+
+
+
+
+
+
+
+
+
 @import "media" // Всегда в конце
