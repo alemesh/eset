@@ -20,6 +20,19 @@
     .visual-text
       padding: 0 10px 0 94px
 
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1370px) and (max-height: 770px)
+  .header-section
+    min-height: 668px
+
+  .label
+    bottom: 24%
+
+  .visual-content
+    padding: 58px 15px 20px
+
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1300px)
     .visual-content
@@ -37,23 +50,94 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1190px)
   .visual-content
-    width: 100%
+    width: 60%
+    padding: 129px 15px 20px
 
+  .header-section
+    min-height: 600px
+
+  .label
+    bottom: 25%
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-    /**/
+  .visual-content
+    width: 100%
+    text-align: center
+    .visual-text
+      border-right: none
+      padding: 0 10px 0 10px
+    .title-header
+      font-size: 42px
+      .logo
+        margin: 0px 0px -6px 5px
+        width: 115px
+        height: 45px
+    .description-header
+      font-size: 50px
+
+  .form-hold
+    margin-top: -200px
+    h3
+      font-size: 24px
+    .form-row
+      width: 100%
+      margin-bottom: 15px
+      .maska-input
+        transform: skewX(0deg)
+      .btn-maska
+        //transform: skewX(-20deg)
+
+    .form-grow-4
+      //order: 2
+      //margin: 0 18px
+
+
+    .form-control
+      height: 42px
+      font-size: 18px
+      //transform: skewX(-20deg)
+
+    .btn
+      height: 42px
+      //transform: skewX(20deg)
+
+  .label
+    bottom: 40%
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	.visual-content
+      padding: 15px 15px 20px
+      .title-header
+        font-size: 33px
+        .logo
+          width: 97px
+          height: 38px
+      .description-header
+        font-size: 39px
+
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+    .visual-content
+      .title-header
+        font-size: 24px
+        .logo
+          width: 73px
+          height: 28px
+      .description-header
+        font-size: 28px
 
+    .form-hold
+      margin-top: -185px
+      h3
+        font-size: 18px
+        margin: 0 0 15px
+      .main-holder
+        padding: 15px 35px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -88,20 +172,4 @@
 
 
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1370px) and (max-height: 768px)
-  .header-section
-    min-height: 668px
 
-  .label
-    bottom: 78%
-
-  .visual-content
-    padding: 58px 15px 20px
-
-
-
-@media only screen and (max-width : 1280px) and (max-height: 800px)
-  .visual-content
-    .title-header
-      font-size: 45px
