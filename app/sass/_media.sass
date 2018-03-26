@@ -54,6 +54,13 @@
       .main-title
         font-size: 25px
 
+    .main-slider
+      .robot
+        top: -280px
+        right: -71px
+        width: 277px
+        height: 280px
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1190px)
@@ -85,7 +92,10 @@
       font-size: 50px
 
   .main
+    //padding-top: 276px
     background: white !important
+    .main-holder
+      padding: 0 35px 276px
     .main-title
       font-size: 19px
     .main-description
@@ -129,55 +139,65 @@
         content: none
 
   .bottom-items
-    .items-list
-      display: none
-      li
-        //width: 100%
-        &:after
-          content: none
-          //width: 13px
-          //height: 68px
-          //border-bottom: 3px solid #ffc20e
-          //border-bottom: 4px solid white
-          display: inline-block
-          vertical-align: middle
-          //transform: rotate(45deg)
-          position: absolute
-          //top: 12px
-          right: 0
-          &:last-child
-            &:after
-              content: none
+  .items-list
+    display: none
+    li
+      //width: 100%
+      &:after
+        content: none
+        //width: 13px
+        //height: 68px
+        //border-bottom: 3px solid #ffc20e
+        //border-bottom: 4px solid white
+        display: inline-block
+        vertical-align: middle
+        //transform: rotate(45deg)
+        position: absolute
+        //top: 12px
+        right: 0
+        &:last-child
+          &:after
+            content: none
+
+  .main-slider
+    .robot
+      top: -306px
+      right: 0
+      width: 290px
+      height: 306px
 
 
 
 
 
+  .items-list.mobile
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    li
+      width: 100%
+      &:after
+        content: none
+        width: 26px
+        height: 0
+        border: 0
+        border-radius: 0
+        border-bottom: 3px solid #ffc20e
+        display: inline-block
+        vertical-align: middle
+        //transform: rotate(45deg)
+        position: absolute
+        top: 100%
+        right: 47%
+        &:last-child
+          &:after
+            content: none
 
-
-    .items-list.mobile
-      display: flex
-      flex-direction: column
-      justify-content: center
-      align-items: center
-      li
-        width: 100%
-        &:after
-          content: ''
-          width: 26px
-          height: 0
-          border: 0
-          border-bottom: 3px solid #ffc20e
-          display: inline-block
-          vertical-align: middle
-          //transform: rotate(45deg)
-          position: absolute
-          top: 100%
-          right: 47%
-          &:last-child
-            &:after
-              content: none
-
+  .sticky
+    position: relative
+    top: 0px
+    z-index: 9999
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -190,8 +210,6 @@
           height: 38px
       .description-header
         font-size: 39px
-
-
 
 
 /* Extra Small Devices, Phones */
@@ -250,9 +268,11 @@
             transform: rotate(135deg)
             position: absolute
             top: 21px
-            left: 30px
+            left: 20px
 
-
+    .main-items
+      h3
+        font-size: 27px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
