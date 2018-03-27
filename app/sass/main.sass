@@ -112,13 +112,24 @@ img
 	.visual-text
 		border-right: 5px solid rgb(255, 194, 14)
 		padding: 0 10px 0 110px
+		//position: relative
+		//display: block
+		//&:after
+		//	content: ''
+		//	//width: 5px
+		//	height: 217px
+		//	border-right: 5px solid #ffc20e
+		//	background: red
+		//	position: absolute
+		//	top: 14px
+		//	right: -16px
 	.title-header
 		font-family: "OpenSansHebrew-Bold"
 		font-size: 44px
 		color: white
 		font-weight: bold
 		line-height: 1.314
-		margin: 0 8px 0 0
+		margin: 0 8px 0 100px
 		.logo
 			display: inline-block
 			//background: red
@@ -269,14 +280,18 @@ img
 			transform: rotate(45deg)
 			position: relative
 //margin: 0 4px
+.sticky
+	position: fixed
+	top: 0px
+	z-index: 9999
+
 
 
 //==================================
 
 .main
-	//min-height: 1017px
-	//min-height: 1383px
-	min-height: 628px
+	//min-height: 628px
+	min-height: 600px
 	background-size: cover
 	//direction: rtl
 	text-align: center
@@ -288,6 +303,7 @@ img
 	//opacity: .8
 	margin-top: -100px
 	padding-top: 100px
+	padding-bottom: 140px
 	.main-holder
 		display: flex
 		justify-content: center
@@ -300,16 +316,18 @@ img
 	.main-title
 		color: #0094a1
 		margin: 0
-		font-size: 36px
+		font-size: 33px
 	.main-description
 		direction: rtl
 		margin: 5px 0 0
-		font-size: 21px
+		font-size: 19px
 	.main-description-2
 		direction: rtl
 		color: #00454e
-		font-size: 26px
+		font-size: 23px
 		font-family: "OpenSansHebrew-Bold"
+	.button-mobile
+		display: none
 
 //=================================================================
 
@@ -317,24 +335,40 @@ img
 	bottom: 0
 	left: 0
 	width: 100%
-	min-height: 250px
+	min-height: 200px
 	//background: gray
 	background: transparent
 	position: relative
-	margin-top: -125px
-	z-index: 23
+	margin-top: -100px
+	z-index: 1
 	.main-holder
 		background: #00454e
 		box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2)
-		min-height: 250px
-		padding: 30px 35px
+		min-height: 200px
+		padding: 15px 35px 30px
 		border-radius: 15px
+		position: relative
+	.robot
+		position: absolute
+		//background: black
+		background-image: url(../img/robot-retus-2.png)
+		background-size: cover
+		top: -306px
+		right: 0
+		width: 290px
+		height: 306px
 
 
 
 .main-items
 	margin: 0 auto
-	max-width: 1080px
+	max-width: 1145px
+	h3
+		direction: rtl
+		text-align: center
+		font-size: 29px
+		margin: 0 0 10px
+		color: #ffc20e
 
 
 .items-list
@@ -350,7 +384,27 @@ img
 		direction: rtl
 		padding: 0 25px
 		//padding: 0 20px
-		width: 20%
+		width: 14.2%
+		position: relative
+		color: white
+		font-family: "OpenSansHebrew-Bold"
+		&:after
+			content: ''
+			width: 15px
+			height: 15px
+			background: #ffc20e
+			border-radius: 50%
+			//border-left: 3px solid #ffc20e
+			//border-bottom: 4px solid white
+			display: inline-block
+			vertical-align: middle
+			//transform: rotate(45deg)
+			position: absolute
+			top: 35px
+			right: -7px
+		&:last-child
+			&:after
+				content: none
 
 .image-item
 	display: flex
@@ -358,10 +412,10 @@ img
 	align-items: center
 	justify-content: center
 	//border-radius: 50%
-	//background: #000
-	background-image: -moz-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
-	background-image: -webkit-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
-	background-image: -ms-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
+	background: transparent
+	//background-image: -moz-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
+	//background-image: -webkit-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
+	//background-image: -ms-linear-gradient( 90deg, rgb(255,48,0) 0%, rgb(255,168,0) 100%)
 	width: 135px
 	//width: 100px
 	height: 135px
@@ -369,15 +423,88 @@ img
 	margin: 0 auto 20px
 
 .text-items
-	font-family: "OpenSansHebrew-Regular"
+	font-family: "OpenSansHebrew-Bold"
 	font-size: 20px
-	color: #fff
+	color: #44676d
 
 
 
 
 
+//============slider============================
 
+.slick-slider
+	direction: ltr
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+
+.slick-list
+	position: relative
+	overflow: hidden
+	display: block
+	margin: 0
+	padding: 0
+	width: 100%
+	transform: translate3d(0, 0, 0)
+	&:focus
+		outline: none
+	&.dragging
+		cursor: pointer
+		cursor: hand
+
+.slick-track
+	position: relative
+	left: 0
+	top: 0
+	display: block
+	transform: translate3d(0, 0, 0)
+
+	&:before,
+	&:after
+		content: ""
+		display: table
+
+	&:after
+		clear: both
+
+.slick-slide
+	float: left
+	height: 100%
+	min-height: 200px
+
+.slick-arrow
+	position: absolute
+	border: none
+	outline: none
+	top: 50%
+	width: 25px
+	height: 25px
+	border-left: 8px solid #ffc20e
+	border-top: 8px solid #ffc20e
+	z-index: 99999
+
+.slick-next
+	right: 16%
+	transform: translateY(-50%) rotate(135deg)
+.slick-prev
+	left: 16%
+	transform: translateY(-50%) rotate(-45deg)
+
+.slick-arrow.slick-hidden
+	display: none
+
+
+//==============================================
 
 
 
@@ -387,20 +514,22 @@ img
 .bottom-section
 	width: 100%
 	position: relative
-	background: #eeeeee
+	//background: #eeeeee
+	background: #fff
 	min-height: 200px
-	margin-top: -125px
-	padding: 125px 0 35px
+	margin-top: -100px
+	padding: 160px 0 40px
 	h3
 		direction: rtl
 		text-align: center
-		font-size: 39px
+		font-size: 29px
 		margin: 35px 0
 		color: #0094a1
 
 .bottom-items
 	margin: 0 auto
-	max-width: 890px
+	//max-width: 890px
+	max-width: 90%
 
 	.items-list
 		display: flex
@@ -412,33 +541,78 @@ img
 		//margin: 0 -10px
 
 		li
+			position: relative
+			text-align: center
 			direction: rtl
-			padding: 0 42px
-			//padding: 0 20px
-			width: 16.6%
-			&:last-child
-				.bottom-text-items
-					&:after
-						content: none
+			//padding: 0 42px
+			padding: 0
+			//width: 16.6%
+			width: 20%
+			&:after
+				content: none
+			//	//width: 13px
+			//	height: 68px
+			//	border-left: 3px solid #ffc20e
+			//	//border-bottom: 4px solid white
+			//	display: inline-block
+			//	vertical-align: middle
+			//	//transform: rotate(45deg)
+			//	position: absolute
+			//	top: 12px
+			//	right: 0
+			//&:last-child
+			//		&:after
+			//			content: none
 
 	.bottom-text-items
-		font-family: "OpenSansHebrew-Regular"
-		font-size: 20px
+		font-family: "OpenSansHebrew-Bold"
+		font-size: 17px
 		color: #00454e
 		display: inline-block
 		position: relative
-		&:after
-			content: ''
-			//width: 13px
-			height: 68px
-			border-left: 3px solid #ffc20e
-			//border-bottom: 4px solid white
-			display: inline-block
-			vertical-align: middle
-			//transform: rotate(45deg)
-			position: absolute
-			top: 20px
-			right: -42px
+		//&:after
+		//	content: ''
+		//	//width: 13px
+		//	height: 68px
+		//	border-left: 3px solid #ffc20e
+		//	//border-bottom: 4px solid white
+		//	display: inline-block
+		//	vertical-align: middle
+		//	//transform: rotate(45deg)
+		//	position: absolute
+		//	top: 20px
+		//	right: -42px
+
+.items-list.mobile
+		display: none
+
+
+//footer====================================================
+
+.footer
+	background: rgb(238, 238, 238)
+	padding: 30px 0 40px
+	.content
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+		h3
+			direction: rtl
+			margin: 0
+			color: #3aa2ad
+			font-size: 22px
+			line-height: 1.168
+			font-family: "OpenSansHebrew-Regular"
+			text-align: center
+		.logo-footer
+			width: 102px
+			height: 64px
+			margin-top: 29px
+
+
+
+
 
 
 

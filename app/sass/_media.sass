@@ -21,6 +21,8 @@
       padding: 0 10px 0 94px
 
 
+
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1370px) and (max-height: 770px)
   .header-section
@@ -41,10 +43,23 @@
       .description-header
         font-size: 53px
 
+    .main
+      .main-title
+        font-size: 30px
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+    .main
+      .main-title
+        font-size: 25px
+
+    .main-slider
+      .robot
+        top: -280px
+        right: -71px
+        width: 277px
+        height: 280px
 
 
 /* Large Devices, Wide Screens */
@@ -76,6 +91,18 @@
     .description-header
       font-size: 50px
 
+  .main
+    //padding-top: 276px
+    background: white !important
+    .main-holder
+      padding: 0 35px 276px
+    .main-title
+      font-size: 19px
+    .main-description
+      font-size: 14px
+    .main-description-2
+      font-size: 20px
+
   .form-hold
     margin-top: -200px
     h3
@@ -106,6 +133,72 @@
     bottom: 40%
 
 
+  .items-list
+    li
+      &:after
+        content: none
+
+  .bottom-items
+  .items-list
+    display: none
+    li
+      //width: 100%
+      &:after
+        content: none
+        //width: 13px
+        //height: 68px
+        //border-bottom: 3px solid #ffc20e
+        //border-bottom: 4px solid white
+        display: inline-block
+        vertical-align: middle
+        //transform: rotate(45deg)
+        position: absolute
+        //top: 12px
+        right: 0
+        &:last-child
+          &:after
+            content: none
+
+  .main-slider
+    .robot
+      top: -306px
+      right: 0
+      width: 290px
+      height: 306px
+
+
+
+
+
+  .items-list.mobile
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    li
+      width: 100%
+      &:after
+        content: none
+        width: 26px
+        height: 0
+        border: 0
+        border-radius: 0
+        border-bottom: 3px solid #ffc20e
+        display: inline-block
+        vertical-align: middle
+        //transform: rotate(45deg)
+        position: absolute
+        top: 100%
+        right: 47%
+        &:last-child
+          &:after
+            content: none
+
+  .sticky
+    position: relative
+    top: 0px
+    z-index: 9999
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.visual-content
@@ -117,7 +210,6 @@
           height: 38px
       .description-header
         font-size: 39px
-
 
 
 /* Extra Small Devices, Phones */
@@ -141,9 +233,46 @@
 
     .header-section
       position: relative
-      background: #00454e !important //Добавить робата
-      //background-size: cover
-      //background-position: center
+      background-image: url(../img/robot-mobi.png) !important
+
+    .main
+      .main-description-2
+        font-size: 16px
+      .wrap-main
+        width: 80%
+        padding: 30px 0 0
+
+      .button-mobile
+        position: relative
+        display: block
+        width: 100%
+        height: 50px
+        padding: 5px
+        overflow: hidden
+        border-radius: 6px
+        background-color: #00454e
+        transition: all .5s ease
+        span
+          color: white
+          font-size: 23px
+          font-family: "OpenSansHebrew-Bold"
+          &:before
+            content: ''
+            //width: 13px
+            height: 15px
+            width: 15px
+            border-left: 5px solid #ffc20e
+            border-bottom: 5px solid #ffc20e
+            display: inline-block
+            vertical-align: middle
+            transform: rotate(135deg)
+            position: absolute
+            top: 21px
+            left: 20px
+
+    .main-items
+      h3
+        font-size: 27px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
