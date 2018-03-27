@@ -1,0 +1,20 @@
+Hi, we have some fixes from the client to the ESET page – they are URGENT.
+
+ 
+
+Attached are the updated PSDs and a reference PNG with the changes –
+
+    Add logo to the corner
+    2 change header text, remove logo
+    Text change
+    Right now, people can submit form without filling the phone field which is required (9 digits minimum)
+    Text change
+    Text change
+    New text paragraph
+    Remove text from the footer, only leave the logo
+
+ 
+
+Thanks, and please update Ravit via Whatsapp when it’s completed
+
+Ori
