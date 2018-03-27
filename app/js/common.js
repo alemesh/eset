@@ -3,7 +3,7 @@ jQuery(function() {
     // initFormValidation();
 });
 
-//==========================================================
+//=============================scroll on form=============================
 $(function() {
 
     $(document).ready(function(){
@@ -26,7 +26,7 @@ $(function() {
 
 
 
-//================================================================================================================
+//================================================= float static ellement===============================================================
 (function(){  // анонимная функция (function(){ })(), чтобы переменные "a" и "b" не стали глобальными
     var a = document.querySelector('#form-scrol'), b = null;  // селектор блока, который нужно закрепить
     window.addEventListener('scroll', Ascroll, false);
@@ -64,7 +64,9 @@ $(function() {
 
 
 
-
+// $(window).on('resize orientationchange', function () {
+//    $('.slick-slider').slick('resize');
+// });
 
 
 

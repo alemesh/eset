@@ -1,7 +1,7 @@
 <?php
 //****************************************
 //edit here
-$senderName = 'OrangeTheory';
+$senderName = 'ESET';
 $senderEmail = $_SERVER['SERVER_NAME'];
 $targetEmail = [];
 $targetEmail = ['Vered@eset.co.il','ravit@gofmans.co.il'];
@@ -69,8 +69,8 @@ $bom = "\xEF\xBB\xBF";
 
 
 
-$redirectToTnxPage = 'http://campaign.gofmans.co.il/OTF/tnx.html?Lead=true';
-//$redirectToTnxPage = 'http://campaign.gofmans.co.il/orange-theory-local/thanks-page.html?Lead=true';
+//$redirectToTnxPage = 'http://campaign.gofmans.co.il/OTF/tnx.html?Lead=true';
+$redirectToTnxPage = 'http://campaign.gofmans.co.il/eset-local/thanks-page.html?Lead=true';
 // redirect
 if($redirectToReferer) {
     header("Location: ".$redirectToTnxPage);
