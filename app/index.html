@@ -34,14 +34,22 @@
 	<div class="wrap-header">
 		<div class="header-section" style="background-image: url(img/background-header1.jpg)">
 			<div class="background-robot"></div>
+			<div class="background-logo">
+				<a href="#">
+					<img src="img/new-logo.png" alt="logo">
+				</a>
+			</div>
 			<span class="label">Gofman creative</span>
 			<div class="main-holder">
+
 				<div class="visual-wrap">
 					<div class="visual-content">
 						<div class="visual-text">
-							<h1 class="title-header">הצטרפו לחבילת ההגנה המתקדמת של <span class="logo" ></span>לעסק וקבלו הטבה </h1>
-							<h1 class="title-header mobile-title">הצטרפו לחבילת ההגנה המתקדמת של<span class="logo" ></span> לעסק וקבלו הטבה </h1>
-							<p class="description-header">ל-3 חודשים חינם!</p>
+							<!--<h1 class="title-header">הצטרפו לחבילת הגנהמפני כופר וקבלו <span class="logo" ></span> </h1>-->
+							<h1 class="title-header">הצטרפו לחבילת הגנה מפני כופר וקבלו</h1>
+							<!--<h1 class="title-header mobile-title">הצטרפו לחבילת ההגנה המתקדמת של<span class="logo" ></span> לעסק וקבלו הטבה </h1>-->
+							<h1 class="title-header mobile-title">הצטרפו לחבילת הגנה מפני כופר וקבלו</h1>
+							<p class="description-header">3 חודשים חינם!</p>
 						</div>
 					</div>
 				</div>
@@ -51,7 +59,8 @@
 		<div class="form-hold" id="form-scrol">
 			<div class="main-holder-wrap">
 				<div class="main-holder">
-					<h3 class="form-title">הצטרפו עכשיו והגנו על העסק שלכם מפני מתקפות סייבר וכופר </h3>
+					<h3 class="form-title">הצטרפו עכשיו ומנעו את מתקפת הסייבר הבאה</h3>
+					<!--<h3 class="form-title">הצטרפו עכשיו והגנו על העסק שלכם מפני מתקפות סייבר וכופר </h3>-->
 					<form action="form_processing.php" class="form form-validation" method="post">
 						<!--<div class="success-msg">-->
 						<!--<p>תודה!  פרטיך התקבלו בהצלחה.</p>-->
@@ -69,12 +78,13 @@
 							</div>
 							<div class="form-row form-grow-3">
 								<div class="maska-input">
-									<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*טלפון" data-regexp="(\+?\d[- .]*){7,13}" title="International, state or local telephone number">
+									<!--<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*נייד" data-regexp="(\+?\d[- .]*){7,13}" title="International, state or local telephone number">-->
+									<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*נייד" pattern="(\+?\d[- .]*){9,13}" title="International, state or local telephone number">
 								</div>
 							</div>
 							<div class="form-row form-grow-4">
 								<div class="maska-input">
-									<input name="email" required class="form-control" type="email" placeholder="*מייל">
+									<input name="email" required class="form-control" type="email" placeholder="*אימייל">
 								</div>
 							</div>
 							<div class="form-row form-grow-5">
@@ -93,9 +103,10 @@
 		<div class="main" style="background-image: url(img/b-maintop.png)">
 			<div class="main-holder">
 				<div class="wrap-main">
-					<h3 class="main-title">מספיק מייל אחד המכיל נוזקות כופר, כדי להשבית לכם את העסק</h3>
-					<p class="main-description">63% ממתקפות הכופר מכוונות כלפיי עסקים בינוניים וקטנים. זה לא הזמן לקחת סיכונים.<br> חבילת ההגנה המתקדמת של ESET, ספקית אבטחת המידע מהמובילות בעולם, תספק לעסק שלכם את ההגנה שהוא צריך ולכם את השקט שאתם צריכים. ל-ESET מוקד תמיכה מקצועי ושירותי וטכנולוגית זיהוי פורצת דרך שיודעת לשמור על יעילות וניצול מינימלי של משאבי המערכת שלא גורמת להאטת המחשב.</p>
-					<p class="main-description mobile-description">63% ממתקפות הכופר מכוונות כלפיי עסקים בינוניים וקטנים. זה לא הזמן לקחת סיכונים.<br> חבילת ההגנה המתקדמת של ESET, ספקית אבטחת המידע מהמובילות בעולם, תספק לעסק שלכם את ההגנה שהוא צריך ולכם את השקט שאתם צריכים.<br> ל-ESET מוקד תמיכה מקצועי ושירותי וטכנולוגית זיהוי פורצת דרך שיודעת לשמור על יעילות וניצול מינימלי של משאבי המערכת שלא גורמת להאטת המחשב.</p>
+					<!--<h3 class="main-title">מספיק מייל אחד המכיל נוזקות כופר, כדי להשבית לכם את העסק</h3>-->
+					<h3 class="main-title">מספיק מייל אחד המכיל נוזקות כופר, כדי להשבית את הארגון</h3>
+					<p class="main-description">93% מהמיילים המתחזים מכילים נוזקת כופר. זה לא הזמן לקחת סיכונים.<br>פתרונות אבטחת המידע שלנו מתבלטים בזיהוי מדויק של נוזקות והתקפות כופר, עוד בטרם נעשתה פגיעה ממשית,<br> תוך שימוש מינימלי במשאבי המערכת כדי לא להפריע לביצועים.</p>
+					<p class="main-description mobile-description">93% מהמיילים המתחזים מכילים נוזקת כופר. זה לא הזמן לקחת סיכונים.<br>פתרונות אבטחת המידע שלנו מתבלטים בזיהוי מדויק של נוזקות והתקפות כופר, עוד בטרם נעשתה פגיעה ממשית, תוך שימוש מינימלי במשאבי המערכת כדי לא להפריע לביצועים.</p>
 					<p class="main-description-2">חבילת ההגנה של ESET עכשיו בהטבה – 3 חודשים חינם</p>
 					<div class="button-mobile">
 						<a href="#form-scrol"><span>לקבלת ההטבה</span></a>
@@ -200,7 +211,7 @@
 								<img src="img/slider-item-1.png" alt="">
 							</span>
 							<span class="text-items">
-								<p> ביצועים מצוינים<br>במהירות גבוהה</p>
+								<p>ביצועים מצוינים<br>ללא הכבדה על המערכת</p>
 							</span>
 						</li>
 						<li>
@@ -239,6 +250,14 @@
 
 
 				</div>
+				<div class="wraper-main">
+					<div class="wrap-main">
+						<p class="main-description">ESET היא חברת אבטחת המידע הרביעית בגודלה בעולם הנחשבת לחלוצת תחום האנטי וירוס, עם יותר מ110 מיליון משתמשים מוגנים ופריסה במעל ל-200 מדינות ברחבי העולם. ESET מפתחת ומייצרת פתרונות הגנה המצטיינים בזיהוי איומים ומיועדים למגזר הפרטי והעסקי כאחד וכוללים הגנה מפני וירוסים, מתקפות סייבר, גניבת זהויות, הגנה על התשלומים ברשת, הצפנת מידע עסקי, הקשחת תהליכי התחברות לרשת ועוד. בין לקוחותינו ניתן למנות משרדי ממשלה ועיריות, מוסדות חינוך ובריאות, חברות היי-טק ועסקים במגוון תחומים רחב.
+						</p>
+					</div>
+				</div>
+
+
 			</div>
 		</div>
 
@@ -248,7 +267,7 @@
 	<div class="footer">
 		<div class="main-holder">
 			<div class="content">
-				<h3>מוגש באדיבות קומסקיור: נציגת ESET בישראל</h3>
+				<!--<h3>מוגש באדיבות קומסקיור: נציגת ESET בישראל</h3>-->
 				<div class="logo-footer">
 					<a href="#">
 						<img src="img/logo-footer.png" alt="logo">

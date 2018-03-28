@@ -66,6 +66,14 @@ img
 	max-width: 100%
 	height: auto
 
+.background-logo
+	position: absolute
+	//display: block
+	top: 30px
+	left: 40px
+	width: 123px
+	//height: 48px
+
 .label
 	z-index: 50
 	position: absolute
@@ -95,9 +103,11 @@ img
 	background-position: center
 
 .main-holder
+	overflow: hidden
 	max-width: 1370px
 	margin: 0 auto
 	padding: 0 35px
+	position: relative
 
 .visual-wrap
 	position: relative
@@ -354,6 +364,7 @@ img
 		padding: 15px 35px 30px
 		border-radius: 15px
 		position: relative
+		overflow: visible
 	.robot
 		position: absolute
 		//background: black
@@ -369,6 +380,7 @@ img
 .main-items
 	margin: 0 auto
 	max-width: 1145px
+	overflow: hidden
 	h3
 		direction: rtl
 		text-align: center
@@ -546,6 +558,21 @@ img
 		font-size: 29px
 		margin: 35px 0
 		color: #0094a1
+	.wraper-main
+		display: flex
+		justify-content: center
+		.wrap-main
+			text-align: center
+			direction: rtl
+			width: 80%
+			padding: 50px 0 0
+			p
+				font-family: "OpenSansHebrew-Regular"
+				color:  #58767b
+				line-height: 1.579
+				font-size: 19px
+
+
 
 .bottom-items
 	margin: 0 auto
@@ -631,7 +658,7 @@ img
 		.logo-footer
 			width: 102px
 			height: 64px
-			margin-top: 29px
+			//margin-top: 29px
 
 .gofman-link
 	margin: 30px 0 10px
