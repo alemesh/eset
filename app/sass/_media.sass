@@ -84,6 +84,14 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+  .header-section
+    .visual-content
+      padding: 80px 15px 20px
+
+  .text-items
+    color: white
+
+
   .visual-content
     width: 100%
     text-align: center
@@ -103,7 +111,7 @@
     //padding-top: 276px
     background: white !important
     .main-holder
-      padding: 0 35px 276px
+      padding: 30px 35px 276px
     .main-title
       font-size: 20px
     .main-description
@@ -149,6 +157,8 @@
         margin: 3px
 
   .bottom-items
+    .items-list
+      display: none
   .items-list
     display: none
     li
@@ -169,6 +179,9 @@
           &:after
             content: none
 
+
+
+
   .main-slider
     .robot
       top: -306px
@@ -188,21 +201,48 @@
     li
       width: 100%
       &:after
-        content: none
-        width: 26px
+        content: ''
+        width: 30px
         height: 0
         border: 0
         border-radius: 0
-        border-bottom: 3px solid #ffc20e
+        border-bottom: 2px solid #ffc20e
         display: inline-block
         vertical-align: middle
         //transform: rotate(45deg)
         position: absolute
         top: 100%
-        right: 47%
+        right: 48%
         &:last-child
           &:after
             content: none
+
+  .wrap-h3
+    text-align: center
+    .h3-mobile
+      display: inline
+
+  .items-list .mobile
+    li
+      &:after
+        content: ''
+        width: 13px
+        height: 68px
+        border-bottom: 3px solid #ffc20e
+        border-bottom: 4px solid white
+        display: inline-block
+        vertical-align: middle
+        //transform: rotate(45deg)
+        position: absolute
+        //top: 12px
+        right: 0
+        &:last-child
+          &:after
+            content: none
+
+  .main-items
+    h3
+      display: none
 
   .sticky
     position: relative
@@ -222,8 +262,19 @@
         font-size: 39px
 
 
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+    .main
+      padding-bottom: 215px
+
+    .bottom-section
+      margin-top: -160px
+      padding: 180px 0 10px
+      background-image: url(../img/bg-mob2.png)
+      background-repeat: no-repeat
+      //background-size: cover
+
     .background-logo
       position: relative
       margin: 0 25% 30px
@@ -267,7 +318,7 @@
         font-size: 16px
       .wrap-main
         width: 80%
-        padding: 30px 0 0
+        padding: 0
 
       .button-mobile
         position: relative
@@ -320,6 +371,12 @@
       a
         .copyrate
           font-size: 12px
+
+    .items-list.mobile
+      li
+        &:after
+          right: 46%
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
