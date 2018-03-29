@@ -4,7 +4,7 @@
 $senderName = 'ESET';
 $senderEmail = $_SERVER['SERVER_NAME'];
 $targetEmail = [];
-$targetEmail = ['Vered@eset.co.il','ravit@gofmans.co.il'];
+$targetEmail = ['Vered@eset.co.il','ravit@gofmans.co.il', 'leads@eset.co.il'];
 
 
 //$targetEmail = ['alemesh@acceptic.com'];
@@ -17,27 +17,28 @@ $redirectURL = $_SERVER['SERVER_NAME'];
 
 //var_dump($_POST); die;
 $ufname = $_POST['name'];
+$companyname = $_POST['company-name'];
 $uphone = $_POST['tel'];
 $umail = $_POST['email'];
-$check = $_POST['check1'];
+//$check = $_POST['check1'];
 
 
-if ($check == 'on') {
-    $sendDok = 'yes';
-
-
-}else{
-
-
-    $sendDok = 'no';
-}
+//if ($check == 'on') {
+//    $sendDok = 'yes';
+//
+//
+//}else{
+//
+//
+//    $sendDok = 'no';
+//}
 
 
     // prepare message text
     $messageText =	'First Name: '.$ufname."\n".
+        'company: '.$companyname."\n".
         'Phone: '.$uphone."\n".
-        'Email: '.$umail."\n".
-        'marketing c.box: '.$sendDok."\n";
+        'Email: '.$umail."\n";
 
 
 // send email
@@ -60,7 +61,7 @@ foreach ($targetEmail as $val){
 $today = date("F j, Y, g:i a");
 
 $file = 'sample.csv';
-$tofile = "$ufname;$uphone;$umail;$sendDok;$today\n";
+$tofile = "$ufname;$companyname;$uphone;$umail;$today\n";
 $bom = "\xEF\xBB\xBF";
 @file_put_contents($file, $bom . $tofile . file_get_contents($file));
 
