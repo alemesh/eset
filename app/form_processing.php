@@ -7,7 +7,6 @@ $targetEmail = [];
 $targetEmail = ['Vered@eset.co.il','ravit@gofmans.co.il', 'leads@eset.co.il'];
 
 
-//$targetEmail = ['alemesh@acceptic.com'];
 $messageSubject = 'Message from web-site - '. $_SERVER['SERVER_NAME'];
 $redirectToReferer = true;
 $redirectURL = $_SERVER['SERVER_NAME'];
@@ -20,18 +19,8 @@ $ufname = $_POST['name'];
 $companyname = $_POST['company-name'];
 $uphone = $_POST['tel'];
 $umail = $_POST['email'];
-//$check = $_POST['check1'];
 
 
-//if ($check == 'on') {
-//    $sendDok = 'yes';
-//
-//
-//}else{
-//
-//
-//    $sendDok = 'no';
-//}
 
 
     // prepare message text
@@ -55,9 +44,6 @@ foreach ($targetEmail as $val){
 
 
 
-
-
-
 $today = date("F j, Y, g:i a");
 
 $file = 'sample.csv';
@@ -65,13 +51,7 @@ $tofile = "$ufname;$companyname;$uphone;$umail;$today\n";
 $bom = "\xEF\xBB\xBF";
 @file_put_contents($file, $bom . $tofile . file_get_contents($file));
 
-
-
-
-
-
-//$redirectToTnxPage = 'http://campaign.gofmans.co.il/OTF/tnx.html?Lead=true';
-$redirectToTnxPage = 'http://campaign.gofmans.co.il/eset-local/thanks-page.html?Lead=true';
+$redirectToTnxPage = 'http://campaign.eset.co.il/thanks-page.html?Lead=true';
 // redirect
 if($redirectToReferer) {
     header("Location: ".$redirectToTnxPage);
